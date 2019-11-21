@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>
+      /**
+      TASK5:
+      Rewrite if..else using multiple ternary operators '?'.
+
+      For readability, it’s recommended to split the code into multiple lines.
+
+      let message;
+
+      if (login == 'Employee') {
+        message = 'Hello';
+      } else if (login == 'Director') {
+        message = 'Greetings';
+      } else if (login == '') {
+        message = 'No login';
+      } else {
+        message = '';
+      }
+      **/
+    </p>
+    <script type="text/javascript">
+      let login=prompt('Enter login ','');
+      let message=(login == 'Employee')?'Hello':
+      (login == 'Director') ? 'Greetings':
+      (login == '') ? 'No Login':
+      '';
+      alert(message);
+
+    </script>
+
+  </body>
+</html>

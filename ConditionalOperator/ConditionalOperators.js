@@ -48,10 +48,3 @@ let message =
 (age<60) ? 'Hello Amma':
 'What an unusual age!';
 alert( message );
-
-//TASK
-//Will alert be shown?
-if ("0") {
-  alert( 'Hello' );
-}
-// answer: Hello if condition is true since it as valid string.
