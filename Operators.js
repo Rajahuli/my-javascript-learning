@@ -80,10 +80,29 @@ alert( 2 * counter++ ); // 2, because counter++ returns the "old" value
 //Modify-in-place
 
 let n = 2;
-n = n + 5;
-n = n * 2;
+n = n + 5; //7
+n = n * 2; //14
 //This notation can be shortened using the operators += and *=:
 let n = 2;
 n += 5; // now n = 7 (same as n = n + 5)
 n *= 2; // now n = 14 (same as n = n * 2)
 alert( n ); // 14
+
+/**
+comma is one of the rarest operator in javascript
+It allow us to evaluvate several expressions dividing them with a comma.
+Each of them is evaluated but only the result of the last one is returned.
+**/
+let a = (1 + 2, 3 + 4);
+
+alert( a ); // 7 (the result of 3 + 4)
+
+//TASKS1
+let a = 1, b = 1;
+
+let c = ++a; // ? ans:2
+let d = b++; // ? ans:1 becuase in post Increament old value is returned first.
+
+//TASK2
+let a = 2;
+let x = 1 + (a *= 2); //5 (x=1+4(a=2*2))

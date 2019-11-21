@@ -53,3 +53,43 @@ alert( `hello ${1}` ); // hello 1
 alert( `hello ${"name"}` ); // hello Ilya
 
 alert( `hello ${name}` ); // ? hello name
+
+//String conversion
+let test1 =true;
+alert(typeof test1);
+test = String(test1);
+alert(typeof test);
+
+//Number conversion
+let total="6"/"3";
+alert(total);
+
+
+let str = "123";
+alert(typeof str); // string
+
+let num = Number(str); // becomes a number 123
+
+alert(typeof num); // number
+
+
+let age = Number("an arbitrary string instead of a number");
+
+alert(age); // NaN, conversion failed
+
+//Conversion Rules
+/**
+Numeric conversion rules:
+
+Value	          Becomes…
+undefined	        NaN
+null	            0
+true and false	1 and 0
+string	Whitespaces from the start and end are removed. If the remaining string is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN.
+**/
+
+
+alert( Number("   123   ") ); // 123
+alert( Number("123z") );      // NaN (error reading a number at "z")
+alert( Number(true) );        // 1
+alert( Number(false) );       // 0
